@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <!-- ===== CDN ===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Music Website</title>
+</head>
+
+<body id="body-pd">
+    <header class="header" id="header">
+        <div class="header__toggle">
+            <i class='bx bx-menu' id="header-toggle"></i>
+        </div>
+
+        <div class="header__search">
+            <input type="text" placeholder="Search Tracks & Artists">
+            <i class='bx bx-search'></i>
+        </div>
+
+        <div class="header__filter">
+            <i class='bx bx-filter'></i>
+            <select class=" icon tag" name="genre">
+                <option value="">Search Genres</option>
+                <option value="31">Alternative Dance</option>
+                <option value="33">Alternative Pop</option>
+                <option value="23">Ambient</option>
+                <option value="34">Anti-Pop</option>
+                <option value="1">Bass</option>
+                <option value="18">Bass House</option>
+                <option value="26">Brazilian Phonk</option>
+                <option value="27">Breakbeat</option>
+                <option value="2">Chill</option>
+                <option value="35">Chill Pop</option>
+                <option value="85">Colour Bass</option>
+                <option value="36">Dance-Pop</option>
+                <option value="66">Deep House</option>
+                <option value="46">Disco House</option>
+                <option value="3">Drum &amp; Bass</option>
+                <option value="4">Drumstep</option>
+                <option value="5">Dubstep</option>
+                <option value="6">EDM</option>
+                <option value="7">Electronic</option>
+                <option value="39">Electronic Pop</option>
+                <option value="83">Electronic Rock</option>
+                <option value="17">Future Bass</option>
+                <option value="8">Future House</option>
+                <option value="57">Future Trap</option>
+                <option value="51">Garage</option>
+                <option value="15">Glitch Hop</option>
+                <option value="9">Hardstyle</option>
+                <option value="10">House</option>
+                <option value="11">Indie Dance</option>
+                <option value="84">Jersey Club</option>
+                <option value="28">Jump-Up</option>
+                <option value="29">Liquid DnB</option>
+                <option value="60">Lofi Hip-Hop</option>
+                <option value="12">Melodic Dubstep</option>
+                <option value="54">Melodic House</option>
+                <option value="22">Midtempo Bass</option>
+                <option value="30">Neurofunk</option>
+                <option value="16">Phonk</option>
+                <option value="19">Pop</option>
+                <option value="55">Progressive House</option>
+                <option value="73">Tech House</option>
+                <option value="80">Techno</option>
+                <option value="14">Trap</option>
+                <option value="21">UKG</option>
+            </select>
+        </div>
+
+        <div class="header__img">
+            <img src="https://img.icons8.com/?size=48&id=o1jbKGDkJEkU&format=png" alt="Profile Image">
+        </div>
+    </header>
+
+    <div class="l-navbar" id="nav-bar">
+        <nav class="nav">
+            <div>
+                <a href="#" class="nav__logo">
+                    <i class='bx bx-music nav__logo-icon'></i>
+                    <span class="nav__logo-name">MusicApp</span>
+                </a>
+
+                <div class="nav__list">
+                    <a href="#" class="nav__link active">
+                        <i class='bx bx-home nav__icon'></i>
+                        <span class="nav__name">Home</span>
+                    </a>
+
+                    <a href="#" class="nav__link">
+                        <i class='bx bx-user nav__icon'></i>
+                        <span class="nav__name">Artists</span>
+                    </a>
+
+                    <a href="#" class="nav__link">
+                        <i class='bx bx-album nav__icon'></i>
+                        <span class="nav__name">Albums</span>
+                    </a>
+
+                    <a href="#" class="nav__link">
+                        <i class='bx bx-music nav__icon'></i>
+                        <span class="nav__name">Songs</span>
+                    </a>
+
+                    <a href="#" class="nav__link">
+                        <i class='bx bxs-playlist'></i>
+                        <span class="nav__name">Playlists</span>
+                    </a>
+
+                    <a href="#" class="nav__link">
+                        <i class='bx bx-bar-chart-alt-2 nav__icon'></i>
+                        <span class="nav__name">Charts</span>
+                    </a>
+                </div>
+            </div>
+
+            <a href="#" class="nav__link">
+                <i class='bx bx-log-out nav__icon'></i>
+                <span class="nav__name">Log Out</span>
+            </a>
+        </nav>
+    </div>
+
+    <!--=== MAIN ===-->
+    <!--HERO SACTION-->
+    <section class="hero">
+        <div class="hero__content">
+            <img src="https://res.cloudinary.com/dtrmjjphv/image/upload/v1718885461/logo_byvtia.png"
+                alt="Profile Image">
+            <p><b>Copyright free music for creators.</b></p>
+            <p>We work with artists representing all genres of electronic music, generating over 500 billion plays
+                globally. Whether you are MrBeast or just starting to create content, our music will always be free to
+                use, allowing you to monetize without fear of copyright strikes.</p>
+            <button class="btn btn-primary">Usage Policy</button>
+        </div>
+        <div class="hero__image">
+            <img src="covers/delta.jpg"
+                alt="Featured Release">
+            <div class="hero__image-info">
+                <h2>DELTA</h2>
+                <p>DJ FKU</p>
+                <div class="hero__buttons">
+                    <button class="btn btn-secondary"><i id="0" class="far songItemPlay fa-play-circle"></i></button>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Popular Releases-->
+    <div class="popular-releases">
+        <h2>Popular Releases</h2>
+        <div class="releases-container">
+            <div class="release">
+                <img src="covers/img1.jpg"
+                    alt="Album Cover">
+                <div class="release-info">
+                    <h3>Royalty</h3>
+                    <p>Maestro Chives, Egzod, Neoni</p>
+                    <p>3 years ago</p>
+                    <p>Trap</p>
+                    <button class="btn btn-play"><i class='bx bx-play-circle'></i>PLAY</button>
+                </div>
+            </div>
+            <div class="release">
+                <img src="covers/img2.jpg"
+                    alt="Album Cover">
+                <div class="release-info">
+                    <h3>On & On (feat. Daniel Levi)</h3>
+                    <p>Cartoon, Daniel Levi, Jéja</p>
+                    <p>8 years ago</p>
+                    <p>Electronic</p>
+                    <button class="btn btn-play"><i class='bx bx-play-circle'></i>PLAY</button>
+                </div>
+            </div>
+            <div class="release">
+                <img src="covers/img3.jpg"
+                    alt="Album Cover">
+                <div class="release-info">
+                    <h3>Nostalgia</h3>
+                    <p>Johnning, Janji</p>
+                    <p>6 days ago</p>
+                    <p>House</p>
+                    <button class="btn btn-play"><i class='bx bx-play-circle'></i>PLAY</button>
+                </div>
+            </div>
+            <div class="release">
+                <img src="covers/img4.jpg"
+                    alt="Album Cover">
+                <div class="release-info">
+                    <h3>Feel Like</h3>
+                    <p>Aix Cee</p>
+                    <p>3 weeks ago</p>
+                    <p>Tech House</p>
+                    <button class="btn btn-play"><i class='bx bx-play-circle'></i>PLAY</button>
+                </div>
+            </div>
+            <div class="release">
+                <img src="covers/img5.jpg"
+                    alt="Album Cover">
+                <div class="release-info">
+                    <h3>Mortals (feat. Laura Brehm)</h3>
+                    <p>Warriyo, Laura Brehm</p>
+                    <p>7 years ago</p>
+                    <p>Trap</p>
+                    <button class="btn btn-play"><i class='bx bx-play-circle'></i>PLAY</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--SOCIAL ICON-->
+    <social class="social">
+        <div class="social-social">
+            <a href="#"><i class='bx bxl-spotify'></i></a>
+            <a href="#"><i class='bx bxl-tiktok'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-youtube'></i></a>
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitch'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+        </div>
+        <div class="social-player">
+            <div class="player-info">
+                <img src="covers/10.jpg" alt="Cover Art">
+                <div class="track-info">
+                    <h4>Purpose</h4>
+                    <p>Sketchez, Aeden</p>
+                </div>
+            </div>
+            <div class="player-controls">
+                <i id="1" class="far songItemPlay fa-play-circle"></i>
+
+                <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+            </div>
+        </div>
+    </social>
+
+    <!--PLAYLIST-->
+
+    <div class="songList">
+        <h2>Best of NCS Playlist</h2>
+        <div class="songItemContainer">
+            <div class="songItem">
+                <img alt="1">
+                <span class="songName">Let me Love You</span>
+                <span class="songlistplay"><span class="timestamp">05:34 <i id="0"
+                            class="far songItemPlay fa-play-circle"></i> </span></span>
+            </div>
+            <div class="songItem">
+                <img alt="1">
+                <span class="songName">Let me Love You</span>
+                <span class="songlistplay"><span class="timestamp">05:34 <i id="1"
+                            class="far songItemPlay fa-play-circle"></i> </span></span>
+            </div>
+            <div class="songItem">
+                <img alt="1">
+                <span class="songName">Let me Love You</span>
+                <span class="songlistplay"><span class="timestamp">05:34 <i id="2"
+                            class="far songItemPlay fa-play-circle"></i> </span></span>
+            </div>
+            <div class="songItem">
+                <img alt="1">
+                <span class="songName">Let me Love You</span>
+                <span class="songlistplay"><span class="timestamp">05:34 <i id="3"
+                            class="far songItemPlay fa-play-circle"></i> </span></span>
+            </div>
+            <div class="songItem">
+                <img alt="1">
+                <span class="songName">Let me Love You</span>
+                <span class="songlistplay"><span class="timestamp">05:34 <i id="4"
+                            class="far songItemPlay fa-play-circle"></i> </span></span>
+            </div>
+            <div class="songItem">
+                <img alt="1">
+                <span class="songName">Let me Love You</span>
+                <span class="songlistplay"><span class="timestamp">05:34 <i id="5"
+                            class="far songItemPlay fa-play-circle"></i> </span></span>
+            </div>
+            <div class="songItem">
+                <img alt="1">
+                <span class="songName">Let me Love You</span>
+                <span class="songlistplay"><span class="timestamp">05:34 <i id="6"
+                            class="far songItemPlay fa-play-circle"></i> </span></span>
+            </div>
+            <div class="songItem">
+                <img alt="1">
+                <span class="songName">Let me Love You</span>
+                <span class="songlistplay"><span class="timestamp">05:34 <i id="7"
+                            class="far songItemPlay fa-play-circle"></i> </span></span>
+            </div>
+            <div class="songItem">
+                <img alt="1">
+                <span class="songName">Let me Love You</span>
+                <span class="songlistplay"><span class="timestamp">05:34 <i id="8"
+                            class="far songItemPlay fa-play-circle"></i> </span></span>
+            </div>
+            <div class="songItem">
+                <img alt="1">
+                <span class="songName">Let me Love You</span>
+                <span class="songlistplay"><span class="timestamp">05:34 <i id="9"
+                            class="far songItemPlay fa-play-circle"></i> </span></span>
+            </div>
+        </div>
+    </div>
+    <!--pagination-->
+    <div>
+        <ul class="pagination">
+
+            <li class="page-item">
+                <a class="page-link" href="#" rel="prev" aria-label="&laquo; Previous">&lsaquo;</a>
+            </li>
+
+
+
+
+
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item active" aria-current="page"><span class="page-link">2</span></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item"><a class="page-link" href="#">6</a></li>
+            <li class="page-item"><a class="page-link" href="#">7</a></li>
+            <li class="page-item"><a class="page-link" href="#">8</a></li>
+
+            <li class="page-item disabled" aria-disabled="true"><span class="page-link">...</span></li>
+
+
+
+
+
+            <li class="page-item"><a class="page-link" href="#9">79</a></li>
+            <li class="page-item"><a class="page-link" href="#0">80</a></li>
+
+
+            <li class="page-item">
+                <a class="page-link" href="#" rel="next" aria-label="Next &raquo;">&rsaquo;</a>
+            </li>
+        </ul>
+
+    </div>
+
+
+
+    <div class="bottom">
+        <div class="icons">
+            <!-- fontawesome icons -->
+            <i class="fas fa-3x fa-step-backward" id="previous"></i>
+            <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+            <i class="fas fa-3x fa-step-forward" id="next"></i>
+        </div>
+        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+        <div class="songInfo">
+            <img src="https://img1.picmix.com/output/stamp/normal/4/8/0/1/1821084_b78bc.gif" width="50px" alt=""
+                id="gif">
+            <span id="masterSongName">Warriyo - Mortals [NCS Release]</span>
+        </div>
+    </div>
+
+
+    <!--===== MAIN JS =====-->
+    <script src="main.js"></script>
+</body>
+
+</html>
